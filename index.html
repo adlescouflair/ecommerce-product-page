@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header class="primary_header">
+
+    <button aria-controls="primary_navigation" class="nav_toggle" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <a href="#"> <img src="images/logo.svg" alt="sneaker logo"> </a>
+    <nav class="flex">
+      <!-- Primary navigation-->
+      <ul role="list" class="primary_navigation flex flex-start" data-visible="false">
+        <li><a href='#'>Collection</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+
+      </ul>
+      <!--Cart and profile menu-->
+    </nav>
+    <nav class="flex secondary_navigation">
+      <ul role="list" class=" flex ">
+        <li class="cart"><img src="/images/icon-cart.svg" alt="shopping cart"></li>
+        <li class="avatar"><img src="/images/image-avatar.png" alt="user profile picture"></li>
+      </ul>
+    </nav>
+
+
+  </header>
+  <main>
+
+    <!-- Product section -->
+    <section class="product_section grid gap-2x">
+
+      <!-- Product images section-->
+      <div class="product_images">
+        <img src="images/image-product-1.jpg" alt="product primary image">
+        <div class="product-image-list-wrapper">
+        <ul class="flex ">
+          <li><img src="./images/image-product-1-thumbnail.jpg" alt=""></li>
+          <li><img src="./images/image-product-2-thumbnail.jpg" alt=""></li>
+          <li><img src="./images/image-product-3-thumbnail.jpg" alt=""></li>
+          <li><img src="./images/image-product-4-thumbnail.jpg" alt=""></li>
+         
+        </ul>
+        </div>
+      </div>
+
+      <!-- Product info section-->
+      <div class="product_info grid">
+        <h3 class="fs-accent-heading text-accent-400 uppercase fw-bold "> Sneaker Company </h3>
+        <h1 class="fs-primary-heading text-primary-800 fw-bold uppercase">Fall Limited Edition</br> Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+          they'll withstand everything the weather can offer.
+        </p>
+
+        <!-- Product price -->
+        <div class="product_price_section  ">
+          <div class="product_price flex">
+            <span class=" fw-bold fs-secondary-heading">
+              $125.00
+            </span>
+            <span class="tags">50%</span>
+
+          </div>
+          <span class="product_old_price text-primary-100 fw-bold strikethrough">$250</span>
+        </div>
+
+        <!-- Product button -->
+        <div class="product_button_wrapper">
+          <div class="product_quantity_button flex bg-neutral-100">
+
+            <button class="border-0">
+              <img src="images/icon-minus.svg" alt="minus">
+            </button>
+            <label for="product_quantity" class="sr-only">Product Quantity</label>
+            <input id="product_quantity" type="text" class=" border-0 bg-neutral-100" value="1" />
+            <button class="border-0">
+              <img src="images/icon-plus.svg" alt="add">
+            </button>
+          </div>
+          <button class="icon-button ">
+            <img src="/images/icon-cart.svg" alt="add to cart">
+            <span>Add to cart</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <div class="lightbox" data-visible="false"></div>
+
+  </main>
+
+
+
+
+</body>
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="main.js"></script>
+</footer>
+
+</html>
