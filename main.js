@@ -2,6 +2,8 @@ var primary_nav = document.querySelector('.primary_navigation');
 var nav_toggle =  document.querySelector('.nav_toggle');
 var lightbox = document.querySelector('.lightbox');
 
+
+
 nav_toggle.addEventListener('click', ()=>{
 
    var isvisible = JSON.parse(primary_nav.getAttribute('data-visible'));
@@ -17,3 +19,5 @@ nav_toggle.addEventListener('click', ()=>{
    }
     
 });
+
+

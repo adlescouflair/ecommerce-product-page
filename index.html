@@ -54,7 +54,7 @@
     <section class="product_section grid gap-2x">
 
       <!-- Product images section-->
-      <div class="product_images">
+      <div class="product_images lg-only">
         <img src="images/image-product-1.jpg" alt="product primary image">
         <div class="product-image-list-wrapper">
         <ul class="flex ">
@@ -65,6 +65,37 @@
          
         </ul>
         </div>
+      </div>
+      <div class="product_images  sm-only">
+        <div class="carousel">
+          <button class="carousel_button carousel_button--left is-hidden">
+            <span class="sr-only">Back Button</span>
+            <img src="images/icon-previous.svg" alt="Previous product button">
+          </button>
+          
+            <ul class="carousel_track">
+              <li class="carousel_slide current_slide">
+                <a href=""><img class="carousel_image" src="images/image-product-1.jpg" alt="product1"></a>
+              </li>
+              <li class="carousel_slide">
+                <a href="#"><img class="carousel_image"  src="images/image-product-2.jpg" alt="product2">
+                </a>
+                </li>
+              <li class="carousel_slide">
+                <a href=""><img class="carousel_image"  src="images/image-product-3.jpg" alt="product3"></a>
+              </li>
+              <li class="carousel_slide"> 
+                <a href="#"><img class="carousel_image" src="images/image-product-4.jpg" alt="product4"></a>
+              </li>
+            </ul>
+         
+          <button class="carousel_button carousel_button--right">
+            <span class="sr-only">Next Button</span>
+            <img src="images/icon-next.svg" alt="Next product button">
+          </button>
+        </div>
+       
+       
       </div>
 
       <!-- Product info section-->
@@ -125,6 +156,7 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
   <script src="main.js"></script>
+  <script src="carousel.js"></script>
 </footer>
 
 </html>
