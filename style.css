@@ -742,6 +742,7 @@ ul {
         justify-content: center;
         align-content: center;
         height: 60px;
+        width: 60px;
         aspect-ratio: 1;
         background-color:var(--clr-white);
         border:none;
