@@ -5,7 +5,6 @@ const minus_quantity = document.querySelector('.product_quantity_minus');
 const add_quantity = document.querySelector('.product_quantity_plus');
 const product_quantity = document.querySelector('#product_quantity');
 
-console.log(product_quantity.value);
 
 nav_toggle.addEventListener('click', ()=>{
 
@@ -29,9 +28,9 @@ minus_quantity.addEventListener('click',()=>{
       product_quantity.value = parseInt(product_quantity.value) -1 ;
    }
 })
+
 // Add  1 to quantity
 add_quantity.addEventListener('click',()=>{
-
       product_quantity.value = parseInt(product_quantity.value) +1;
    
 })
